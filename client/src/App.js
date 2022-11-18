@@ -1,6 +1,8 @@
 import React from "react";
 
 import "./app.css";
+import Posts from "./components/Posts/Posts";
+import Form from "./components/Form/Form";
 
 const App = () => {
   return (
@@ -10,8 +12,12 @@ const App = () => {
       </header>
 
       <main className="main">
-        <div className="gridContainer">{/* <Grid /> */}</div>
-        <div className="formContainer">{/* <Form /> */}</div>
+        <div className="gridContainer">
+          <Posts />
+        </div>
+        <div className="formContainer">
+          <Form />
+        </div>
       </main>
     </div>
   );
